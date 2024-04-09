@@ -1,0 +1,23 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "useDefineForClassFields": true,
+    "rootDir": ".",
+    "outDir": "build",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "skipLibCheck": true,
+    
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
+}
