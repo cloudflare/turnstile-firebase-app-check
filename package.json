@@ -2,6 +2,11 @@
   "name": "@cloudflare/turnstile-firebase-app-check",
   "version": "0.0.1",
   "description": "An App Check provider using Cloudflare Turnstile",
+  "keywords": ["cloudflare", "turnstile", "firebase"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudflare/turnstile-firebase-app-check"
+  },
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "type": "module",
