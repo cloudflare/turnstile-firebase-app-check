@@ -1,5 +1,5 @@
 {
-  "name": "cf-ac-lib",
+  "name": "@cloudflare/turnstile-firebase-app-check",
   "version": "0.0.1",
   "description": "An App Check provider using Cloudflare Turnstile",
   "main": "build/index.js",

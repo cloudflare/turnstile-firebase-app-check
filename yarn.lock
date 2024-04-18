@@ -41,6 +41,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudflare/turnstile-firebase-app-check@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@cloudflare/turnstile-firebase-app-check@workspace:."
+  dependencies:
+    "@types/cloudflare-turnstile": "npm:^0.1.3"
+    "@types/node": "npm:20.8.2"
+    firebase: "npm:^10.7.2"
+    gts: "npm:^5.2.0"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -1072,18 +1084,6 @@ __metadata:
   checksum: 10/e6effce26b9404e3c0f301498184f243811c30dfe6d0b9051863bd8e4034d09c8c2923794f280d6827e5aa055f6c434115ff97864a16a963366fb35fd673024b
   languageName: node
   linkType: hard
-
-"cf-ac-lib@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "cf-ac-lib@workspace:."
-  dependencies:
-    "@types/cloudflare-turnstile": "npm:^0.1.3"
-    "@types/node": "npm:20.8.2"
-    firebase: "npm:^10.7.2"
-    gts: "npm:^5.2.0"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "chalk@npm:^2.4.2":
   version: 2.4.2
