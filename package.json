@@ -7,8 +7,7 @@
     "type": "git",
     "url": "https://github.com/cloudflare/turnstile-firebase-app-check"
   },
-  "main": "build/index.js",
-  "typings": "build/index.d.ts",
+  "main": "src/index.ts",
   "type": "module",
   "devDependencies": {
     "@types/cloudflare-turnstile": "^0.1.3",
