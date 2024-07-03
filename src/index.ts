@@ -72,7 +72,7 @@ export class CloudflareProviderOptions implements CustomProviderOptions {
     }
 
     await readyTurnstile;
-    const turnstileToken = turnstile.getResponse(turnstileDivId);
+    const turnstileToken = turnstile.getResponse('#' + turnstileDivId);
     // can't use callables, so we want to deploy an HTTP method.
     // https://github.com/firebase/firebase-js-sdk/issues/6176
     // const tokenExchange = httpsCallable(functions, "fetchAppCheckToken");
