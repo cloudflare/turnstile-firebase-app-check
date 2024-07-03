@@ -2,7 +2,7 @@ import { AppCheckToken, CustomProviderOptions } from 'firebase/app-check';
 
 const APIJS_URL =
   'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback';
-const turnstileDivId = 'turnstile';
+const turnstileDivId = 'turnstile-widget';
 const turnstileClassName = 'cf-turnstile';
 
 let promiseResolve: (value: unknown) => void;
