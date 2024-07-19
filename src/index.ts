@@ -25,7 +25,7 @@ export class CloudflareProviderOptions implements CustomProviderOptions {
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).onloadTurnstileCallback = () => {
-      turnstile.render(turnstileElement, {
+      turnstile.render('#' + turnstileDivId, {
         sitekey: this._siteKey,
         callback: (token: string) => {
           promiseResolve(true);
