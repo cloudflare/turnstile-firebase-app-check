@@ -2,7 +2,11 @@
   "name": "@cloudflare/turnstile-firebase-app-check",
   "version": "0.0.5",
   "description": "An App Check provider using Cloudflare Turnstile",
-  "keywords": ["cloudflare", "turnstile", "firebase"],
+  "keywords": [
+    "cloudflare",
+    "turnstile",
+    "firebase"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cloudflare/turnstile-firebase-app-check"
@@ -10,22 +14,26 @@
   "main": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/cloudflare-turnstile": "^0.1.3",
-    "@types/node": "20.8.2",
-    "gts": "^5.2.0",
-    "typescript": "^5.3.3"
+    "@types/cloudflare-turnstile": "^0.2.2",
+    "@types/node": "^26.1.0",
+    "eslint": "^10.6.0",
+    "gts": "^7.0.0",
+    "typescript": "^6.0.3"
   },
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "posttest": "npm run lint"
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run lint"
   },
   "dependencies": {
-    "firebase": "^10.7.2"
+    "firebase": "^12.15.0"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
   },
   "packageManager": "yarn@4.1.1"
 }

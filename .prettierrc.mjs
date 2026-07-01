@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-module.exports = {
-  ...require('gts/.prettierrc.json')
-}
+import gtsPrettierConfig from 'gts/.prettierrc.json' with { type: 'json' };
+
+export default gtsPrettierConfig;

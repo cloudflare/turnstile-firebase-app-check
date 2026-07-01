@@ -1,4 +1,4 @@
-import { AppCheckToken, CustomProviderOptions } from 'firebase/app-check';
+import {AppCheckToken, CustomProviderOptions} from 'firebase/app-check';
 
 const APIJS_URL =
   'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback';
@@ -16,7 +16,7 @@ let tokenExpireTimeMillis = 0;
 export class CloudflareProviderOptions implements CustomProviderOptions {
   constructor(
     private _tokenExchangeUrl: string,
-    private _siteKey: string
+    private _siteKey: string,
   ) {
     const body: HTMLElement = document.body;
     const turnstileElement = this.makeDiv();
@@ -27,6 +27,7 @@ export class CloudflareProviderOptions implements CustomProviderOptions {
     (window as any).onloadTurnstileCallback = () => {
       turnstile.render(turnstileElement, {
         sitekey: this._siteKey,
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         callback: (token: string) => {
           promiseResolve(true);
         },
@@ -66,7 +67,9 @@ export class CloudflareProviderOptions implements CustomProviderOptions {
     return this.renderAndExchange(true);
   }
 
-  private async renderAndExchange(limitedUse: boolean): Promise<Readonly<AppCheckToken>> {
+  private async renderAndExchange(
+    limitedUse: boolean,
+  ): Promise<Readonly<AppCheckToken>> {
     if (token !== null && tokenExpireTimeMillis > Date.now()) {
       return token;
     }
